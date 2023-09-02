@@ -475,8 +475,8 @@ return QStringLiteral("undefined");
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for active at line 74, column 9
-QObject *r2_1;
 bool r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(59, &r2_1)) {
 aotContext->setInstructionPointer(2);

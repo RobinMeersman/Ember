@@ -8,8 +8,21 @@
 #include "import_qml_components_plugins.h"
 #include "import_qml_plugins.h"
 
+#include "api/EM_FileTree.h"
+#include <iostream>
+#include <vector>
+
 int main(int argc, char *argv[])
 {
+
+    EM_Node node = {
+            .size = 0,
+            .path = "",
+            .is_directory = false
+    };
+
+    std::cout << node.children.size() << std::endl;
+
     set_qt_environment();
 
     QGuiApplication app(argc, argv);

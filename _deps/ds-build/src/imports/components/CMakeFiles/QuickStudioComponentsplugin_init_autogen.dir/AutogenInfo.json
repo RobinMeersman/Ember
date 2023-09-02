@@ -3,7 +3,7 @@
 	"CMAKE_BINARY_DIR" : "/home/robin/Desktop/Projects/Ember",
 	"CMAKE_CURRENT_BINARY_DIR" : "/home/robin/Desktop/Projects/Ember/_deps/ds-build/src/imports/components",
 	"CMAKE_CURRENT_SOURCE_DIR" : "/home/robin/Desktop/Projects/Ember/_deps/ds-src/src/imports/components",
-	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_EXECUTABLE" : "/home/robin/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
 		"/home/robin/Desktop/Projects/Ember/_deps/ds-src/src/imports/components/CMakeLists.txt",
@@ -70,7 +70,7 @@
 		"-dM",
 		"-E",
 		"-c",
-		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
+		"/home/robin/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp"
 	],
 	"MOC_PREDEFS_FILE" : "/home/robin/Desktop/Projects/Ember/_deps/ds-build/src/imports/components/QuickStudioComponentsplugin_init_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,

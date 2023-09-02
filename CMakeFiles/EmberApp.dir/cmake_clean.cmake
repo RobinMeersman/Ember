@@ -20,6 +20,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/EmberApp.dir/EmberApp_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/EmberApp.dir/emberapp_qmltyperegistrations.cpp.o"
   "CMakeFiles/EmberApp.dir/emberapp_qmltyperegistrations.cpp.o.d"
+  "CMakeFiles/EmberApp.dir/src/api/EM_FileTree.cpp.o"
+  "CMakeFiles/EmberApp.dir/src/api/EM_FileTree.cpp.o.d"
   "CMakeFiles/EmberApp.dir/src/main.cpp.o"
   "CMakeFiles/EmberApp.dir/src/main.cpp.o.d"
   "EmberApp"

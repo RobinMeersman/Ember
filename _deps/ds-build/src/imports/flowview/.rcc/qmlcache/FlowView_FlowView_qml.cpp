@@ -1633,8 +1633,8 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for height at line 337, column 9
-QObject *r2_1;
 double r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(295, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -1675,8 +1675,8 @@ return r2_1;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for width at line 342, column 9
-QObject *r2_1;
 double r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(298, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -1700,8 +1700,8 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for height at line 343, column 9
-QObject *r2_1;
 double r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(300, &r2_1)) {
 aotContext->setInstructionPointer(5);

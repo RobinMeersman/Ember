@@ -6431,6 +6431,15 @@
 		<Unit filename="/home/robin/Desktop/Projects/Ember/qtquickcontrols2.conf">
 			<Option target="EmberApp"/>
 		</Unit>
+		<Unit filename="/home/robin/Desktop/Projects/Ember/src/api/EM_FileTree.cpp">
+			<Option target="EmberApp"/>
+		</Unit>
+		<Unit filename="/home/robin/Desktop/Projects/Ember/src/api/EM_FileTree.h">
+			<Option target="EmberApp"/>
+		</Unit>
+		<Unit filename="/home/robin/Desktop/Projects/Ember/src/api/Ember_Linux.h">
+			<Option target="EmberApp"/>
+		</Unit>
 		<Unit filename="/home/robin/Desktop/Projects/Ember/src/main.cpp">
 			<Option target="EmberApp"/>
 		</Unit>

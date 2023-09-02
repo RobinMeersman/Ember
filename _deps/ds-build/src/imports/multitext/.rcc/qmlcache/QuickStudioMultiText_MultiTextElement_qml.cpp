@@ -783,8 +783,8 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for leading at line 37, column 5
-double r2_2;
 QObject *r2_1;
+double r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(2, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -808,8 +808,8 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for fontHeight at line 38, column 5
-double r2_2;
 QObject *r2_1;
+double r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(4, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -834,10 +834,10 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for lineHeightMode at line 59, column 5
 double r7_1;
-double r2_2;
-int r2_4;
-bool r2_3;
 QObject *r2_1;
+double r2_2;
+bool r2_3;
+int r2_4;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(10, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -989,8 +989,8 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for onLanguageExceptionItemChanged at line 71, column 5
 QObject *r7_1;
-QObject *r2_1;
 bool r2_2;
+QObject *r2_1;
 // generate_CreateCallContext
 {
 // generate_LoadQmlContextPropertyLookup
@@ -1045,9 +1045,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for when at line 45, column 9
 double r7_1;
-QObject *r2_1;
 double r2_2;
 bool r2_3;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(54, &r2_1)) {
 aotContext->setInstructionPointer(2);

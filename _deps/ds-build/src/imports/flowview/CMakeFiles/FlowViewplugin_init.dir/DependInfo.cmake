@@ -12,8 +12,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/robin/Desktop/Projects/Ember/_deps/ds-build/src/imports/flowview/FlowViewplugin_init_autogen/mocs_compilation.cpp" "_deps/ds-build/src/imports/flowview/CMakeFiles/FlowViewplugin_init.dir/FlowViewplugin_init_autogen/mocs_compilation.cpp.o" "gcc" "_deps/ds-build/src/imports/flowview/CMakeFiles/FlowViewplugin_init.dir/FlowViewplugin_init_autogen/mocs_compilation.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

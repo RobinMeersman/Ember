@@ -12,9 +12,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/robin/Desktop/Projects/Ember/_deps/ds-build/src/imports/tools/eventsimulator/QuickStudioEventSimulatorplugin_autogen/mocs_compilation.cpp" "_deps/ds-build/src/imports/tools/eventsimulator/CMakeFiles/QuickStudioEventSimulatorplugin.dir/QuickStudioEventSimulatorplugin_autogen/mocs_compilation.cpp.o" "gcc" "_deps/ds-build/src/imports/tools/eventsimulator/CMakeFiles/QuickStudioEventSimulatorplugin.dir/QuickStudioEventSimulatorplugin_autogen/mocs_compilation.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/robin/Desktop/Projects/Ember/_deps/ds-build/src/imports/tools/eventsimulator/CMakeFiles/QuickStudioEventSimulator.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

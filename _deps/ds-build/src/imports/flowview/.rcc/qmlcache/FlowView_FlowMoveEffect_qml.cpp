@@ -501,8 +501,8 @@ extern const QQmlPrivate::TypedFunction aotBuiltFunctions[] = {
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for itemHeight at line 36, column 5
-double r2_2;
 QObject *r2_1;
+double r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadScopeObjectPropertyLookup(0, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -527,11 +527,11 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for value at line 58, column 17
 int r7_1;
-QObject *r2_1;
 int r2_2;
-double r2_4;
 QVariant r2_5;
+QObject *r2_1;
 bool r2_3;
+double r2_4;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(12, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -683,11 +683,11 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for value at line 83, column 17
 int r7_1;
-bool r2_3;
-QVariant r2_5;
-int r2_2;
-QObject *r2_1;
 double r2_4;
+QObject *r2_1;
+int r2_2;
+QVariant r2_5;
+bool r2_3;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(24, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -795,8 +795,8 @@ return r2_5;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for easing at line 95, column 17
-QVariant r2_2;
 QObject *r2_1;
+QVariant r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(32, &r2_1)) {
 aotContext->setInstructionPointer(2);

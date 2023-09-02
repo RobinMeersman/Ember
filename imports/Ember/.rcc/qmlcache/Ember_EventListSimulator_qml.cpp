@@ -270,7 +270,60 @@ extern const unsigned char qmlData alignas(16) [] = {
 };
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_MSVC(4573)
+
+template <typename Binding>
+void wrapCall(const QQmlPrivate::AOTCompiledContext *aotContext, void *dataPtr, void **argumentsPtr, Binding &&binding)
+{
+    using return_type = std::invoke_result_t<Binding, const QQmlPrivate::AOTCompiledContext *, void **>;
+    if constexpr (std::is_same_v<return_type, void>) {
+       Q_UNUSED(dataPtr)
+       binding(aotContext, argumentsPtr);
+    } else {
+        if (dataPtr) {
+           new (dataPtr) return_type(binding(aotContext, argumentsPtr));
+        } else {
+           binding(aotContext, argumentsPtr);
+        }
+    }
+}
 extern const QQmlPrivate::TypedFunction aotBuiltFunctions[];
-extern const QQmlPrivate::TypedFunction aotBuiltFunctions[] = { { 0, QMetaType::fromType<void>(), {}, nullptr } };QT_WARNING_POP
+extern const QQmlPrivate::TypedFunction aotBuiltFunctions[] = {
+{ 0, QMetaType::fromType<void>(), {  }, 
+    [](const QQmlPrivate::AOTCompiledContext *aotContext, void *dataPtr, void **argumentsPtr) {
+        wrapCall(aotContext, dataPtr, argumentsPtr, [](const QQmlPrivate::AOTCompiledContext *aotContext, void **argumentsPtr) {
+Q_UNUSED(aotContext)
+Q_UNUSED(argumentsPtr)
+// expression for onTriggered at line 15, column 9
+QObject *r7_1;
+QObject *r2_1;
+// generate_CreateCallContext
+{
+// generate_LoadQmlContextPropertyLookup
+while (!aotContext->loadSingletonLookup(0, &r2_1)) {
+aotContext->setInstructionPointer(3);
+aotContext->initLoadSingletonLookup(0, QQmlPrivate::AOTCompiledContext::InvalidStringId);
+if (aotContext->engine->hasError())
+    return ;
+}
+// generate_StoreReg
+r7_1 = r2_1;
+// generate_CallPropertyLookup
+{
+void *args[] = { nullptr };
+const QMetaType types[] = { QMetaType() };
+while (!aotContext->callObjectPropertyLookup(1, r7_1, args, types, 0)) {
+aotContext->setInstructionPointer(10);
+aotContext->initCallObjectPropertyLookup(1);
+if (aotContext->engine->hasError())
+    return ;
+}
+}
+// generate_PopContext
+;}
+// generate_Ret
+return;
+});}
+ },{ 0, QMetaType::fromType<void>(), {}, nullptr }};
+QT_WARNING_POP
 }
 }

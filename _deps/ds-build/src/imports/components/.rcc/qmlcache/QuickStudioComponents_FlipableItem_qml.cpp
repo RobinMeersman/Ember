@@ -591,8 +591,8 @@ Q_UNUSED(argumentsPtr)
 // expression for onCompleted at line 139, column 5
 QObject *r7_1;
 QQmlListProperty<QObject> r8_1;
-QObject *r2_1;
 QVariant r2_4;
+QObject *r2_1;
 int r2_3;
 QQmlListProperty<QObject> r2_2;
 // generate_CreateCallContext
@@ -757,9 +757,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for x at line 148, column 9
 int r7_1;
+double r2_4;
 int r2_2;
 bool r2_3;
-double r2_4;
 QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(22, &r2_1)) {
@@ -807,10 +807,10 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for y at line 149, column 9
 int r7_1;
-double r2_4;
 QObject *r2_1;
-int r2_2;
 bool r2_3;
+double r2_4;
+int r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(24, &r2_1)) {
 aotContext->setInstructionPointer(2);

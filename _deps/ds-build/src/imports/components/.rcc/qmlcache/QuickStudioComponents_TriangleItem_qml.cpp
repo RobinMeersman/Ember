@@ -2211,8 +2211,8 @@ extern const QQmlPrivate::TypedFunction aotBuiltFunctions[] = {
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for arcRadius at line 259, column 5
-double r2_2;
 QObject *r2_1;
+double r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(0, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -2520,8 +2520,8 @@ return;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for enabled at line 305, column 5
-QObject *r2_1;
 bool r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(220, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -2545,8 +2545,8 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for smooth at line 306, column 5
-QObject *r2_1;
 bool r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(222, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -2570,9 +2570,9 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for samples at line 307, column 5
-int r2_3;
-bool r2_2;
 QObject *r2_1;
+bool r2_2;
+int r2_3;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(224, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -2629,8 +2629,8 @@ return r2_1;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for margins at line 313, column 9
-QObject *r2_1;
 double r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(227, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -2658,8 +2658,8 @@ Q_UNUSED(argumentsPtr)
 // expression for __width at line 324, column 9
 double r7_1;
 double r8_1;
-QObject *r2_1;
 double r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(229, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -2867,9 +2867,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for startX at line 334, column 9
 double r7_1;
-double r2_3;
-QObject *r2_1;
 QVariant r2_2;
+QObject *r2_1;
+double r2_3;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(249, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -2921,9 +2921,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for startY at line 335, column 9
 double r7_1;
-double r2_3;
 QObject *r2_1;
 QVariant r2_2;
+double r2_3;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(254, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -3049,9 +3049,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for x at line 341, column 13
 double r7_1;
-QVariant r2_2;
-double r2_3;
 QObject *r2_1;
+double r2_3;
+QVariant r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(267, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -3103,8 +3103,8 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for y at line 342, column 13
 double r7_1;
-QObject *r2_1;
 double r2_3;
+QObject *r2_1;
 QVariant r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(272, &r2_1)) {
@@ -3157,9 +3157,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for x at line 346, column 13
 double r7_1;
-QVariant r2_2;
-QObject *r2_1;
 double r2_3;
+QObject *r2_1;
+QVariant r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(277, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -3212,8 +3212,8 @@ Q_UNUSED(argumentsPtr)
 // expression for y at line 347, column 13
 double r7_1;
 QObject *r2_1;
-double r2_3;
 QVariant r2_2;
+double r2_3;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(282, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -3265,8 +3265,8 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for radiusX at line 351, column 13
 double r11_1;
-double r2_2;
 QObject *r2_1;
+double r2_2;
 double r10_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(288, &r2_1)) {
@@ -3302,8 +3302,8 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for radiusY at line 352, column 13
 double r11_1;
-QObject *r2_1;
 double r2_2;
+QObject *r2_1;
 double r10_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(292, &r2_1)) {
@@ -3339,9 +3339,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for x at line 354, column 13
 double r7_1;
+double r2_3;
 QObject *r2_1;
 QVariant r2_2;
-double r2_3;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(295, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -3393,9 +3393,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for y at line 355, column 13
 double r7_1;
+QObject *r2_1;
 double r2_3;
 QVariant r2_2;
-QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(300, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -3501,9 +3501,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for y at line 360, column 13
 double r7_1;
-QObject *r2_1;
-QVariant r2_2;
 double r2_3;
+QVariant r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(310, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -3629,9 +3629,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for x at line 367, column 13
 double r7_1;
-double r2_3;
 QObject *r2_1;
 QVariant r2_2;
+double r2_3;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(323, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -3683,9 +3683,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for y at line 368, column 13
 double r7_1;
-QVariant r2_2;
-QObject *r2_1;
 double r2_3;
+QObject *r2_1;
+QVariant r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(328, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -3737,9 +3737,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for x at line 372, column 13
 double r7_1;
+double r2_3;
 QObject *r2_1;
 QVariant r2_2;
-double r2_3;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(333, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -3791,9 +3791,9 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for y at line 373, column 13
 double r7_1;
-QVariant r2_2;
-double r2_3;
 QObject *r2_1;
+double r2_3;
+QVariant r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(338, &r2_1)) {
 aotContext->setInstructionPointer(5);

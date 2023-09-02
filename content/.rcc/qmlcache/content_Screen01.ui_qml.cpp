@@ -822,8 +822,8 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for height at line 15, column 5
-double r2_2;
 QObject *r2_1;
+double r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadSingletonLookup(2, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -909,9 +909,9 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for family at line 36, column 9
-QVariant r2_2;
-QString r2_3;
 QObject *r2_1;
+QString r2_3;
+QVariant r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadSingletonLookup(17, &r2_1)) {
 aotContext->setInstructionPointer(2);

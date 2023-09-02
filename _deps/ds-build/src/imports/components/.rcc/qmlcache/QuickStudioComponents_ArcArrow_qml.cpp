@@ -640,8 +640,8 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for xScale at line 48, column 9
 double r2_3;
-QObject *r2_1;
 bool r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(0, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -714,8 +714,8 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for y at line 50, column 9
 double r7_1;
-double r2_2;
 QObject *r2_1;
+double r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(4, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -747,8 +747,8 @@ Q_UNUSED(argumentsPtr)
 // expression for capStyle at line 59, column 9
 int r7_1;
 int r2_2;
-bool r2_3;
 QObject *r2_1;
+bool r2_3;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(6, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -823,8 +823,8 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for strokeColor at line 62, column 9
-QObject *r2_1;
 QVariant r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(10, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -964,8 +964,8 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for width at line 73, column 17
-double r2_2;
 QObject *r2_1;
+double r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(19, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -1022,8 +1022,8 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for radius at line 77, column 17
-int r2_2;
 QObject *r2_1;
+int r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(23, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -1047,8 +1047,8 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for fillColor at line 79, column 17
-QObject *r2_1;
 QVariant r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(25, &r2_1)) {
 aotContext->setInstructionPointer(2);

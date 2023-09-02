@@ -181,8 +181,8 @@ Q_UNUSED(argumentsPtr)
 // expression for gamma at line 40, column 5
 double r11_1;
 QObject *r7_1;
-QObject *r2_1;
 double r2_2;
+QObject *r2_1;
 QVariant r2_3;
 double r10_1;
 double r12_1;

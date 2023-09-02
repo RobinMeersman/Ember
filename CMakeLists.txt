@@ -15,7 +15,10 @@ if (Qt6_VERSION VERSION_GREATER_EQUAL 6.3)
     qt_standard_project_setup()
 endif()
 
-qt_add_executable(EmberApp src/main.cpp)
+qt_add_executable(EmberApp src/main.cpp
+        src/api/Ember_Linux.h
+        src/api/EM_FileTree.h
+        src/api/EM_FileTree.cpp)
 
 qt_add_resources(EmberApp "configuration"
     PREFIX "/"

@@ -197,8 +197,8 @@ Q_UNUSED(argumentsPtr)
 double r9_1;
 double r7_1;
 double r8_1;
-double r2_2;
 QObject *r2_1;
+double r2_2;
 double r10_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(0, &r2_1)) {

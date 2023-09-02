@@ -549,8 +549,8 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for implicitWidth at line 50, column 9
 double r7_1;
-double r2_2;
 QVariant r2_1;
+double r2_2;
 // generate_LoadQmlContextPropertyLookup
 r2_1 = QVariant(aotContext->lookupResultMetaType(8));
 while (!aotContext->loadScopeObjectPropertyLookup(8, r2_1.data())) {

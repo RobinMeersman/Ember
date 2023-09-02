@@ -476,8 +476,8 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for implicitWidth at line 40, column 5
 double r11_1;
-QObject *r2_1;
 double r2_2;
+QObject *r2_1;
 double r10_1;
 // generate_MoveConst
 r10_1 = double(32);
@@ -513,8 +513,8 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for implicitHeight at line 41, column 5
 double r11_1;
-double r2_2;
 QObject *r2_1;
+double r2_2;
 double r10_1;
 // generate_MoveConst
 r10_1 = double(32);
@@ -580,8 +580,8 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for maskSource at line 55, column 9
-QObject *r2_1;
 QVariant r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(22, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -630,10 +630,10 @@ Q_UNUSED(argumentsPtr)
 // expression for onCompleted at line 61, column 5
 QObject *r7_1;
 QQmlListProperty<QObject> r8_1;
-int r2_3;
 QObject *r2_1;
-QVariant r2_4;
+int r2_3;
 QQmlListProperty<QObject> r2_2;
+QVariant r2_4;
 // generate_CreateCallContext
 {
 // generate_LoadQmlContextPropertyLookup

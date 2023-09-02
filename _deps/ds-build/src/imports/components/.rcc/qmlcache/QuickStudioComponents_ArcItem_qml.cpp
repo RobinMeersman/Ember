@@ -2217,8 +2217,8 @@ extern const QQmlPrivate::TypedFunction aotBuiltFunctions[] = {
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for roundEnd at line 307, column 5
-QObject *r2_1;
 bool r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(6, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -2509,8 +2509,8 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for samples at line 285, column 5
 int r2_3;
-QObject *r2_1;
 bool r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(359, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -2553,8 +2553,8 @@ Q_UNUSED(argumentsPtr)
 double r9_1;
 double r7_1;
 double r8_1;
-double r2_2;
 QObject *r2_1;
+double r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(361, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -2744,8 +2744,8 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for __xCenter at line 375, column 9
 double r7_1;
-QObject *r2_1;
 double r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(379, &r2_1)) {
 aotContext->setInstructionPointer(5);
@@ -2826,8 +2826,8 @@ Q_UNUSED(argumentsPtr)
 // expression for onCompleted at line 490, column 5
 QObject *r7_1;
 QObject *r8_1;
-QObject *r2_1;
 bool r2_2;
+QObject *r2_1;
 // generate_CreateCallContext
 {
 // generate_LoadQmlContextPropertyLookup

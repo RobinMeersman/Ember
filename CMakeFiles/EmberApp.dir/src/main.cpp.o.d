@@ -386,4 +386,15 @@ CMakeFiles/EmberApp.dir/src/main.cpp.o: \
  /home/robin/Qt/6.5.2/gcc_64/include/QtCore/qurl.h \
  /home/robin/Qt/6.5.2/gcc_64/include/QtQml/qqmlextensioninterface.h \
  /home/robin/Desktop/Projects/Ember/src/import_qml_plugins.h \
- /home/robin/Qt/6.5.2/gcc_64/include/QtQml/qqmlextensionplugin.h
+ /home/robin/Qt/6.5.2/gcc_64/include/QtQml/qqmlextensionplugin.h \
+ /home/robin/Desktop/Projects/Ember/src/api/EM_FileTree.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+ /usr/include/c++/11/bits/locale_facets.tcc \
+ /usr/include/c++/11/bits/basic_ios.tcc \
+ /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc

@@ -377,8 +377,8 @@ Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for implicitHeight at line 43, column 5
 double r7_1;
-QVariant r2_1;
 double r2_2;
+QVariant r2_1;
 // generate_LoadQmlContextPropertyLookup
 r2_1 = QVariant(aotContext->lookupResultMetaType(4));
 while (!aotContext->loadScopeObjectPropertyLookup(4, r2_1.data())) {

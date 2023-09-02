@@ -497,8 +497,8 @@ extern const QQmlPrivate::TypedFunction aotBuiltFunctions[] = {
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for text at line 73, column 9
-QString r2_2;
 QObject *r2_1;
+QString r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(40, &r2_1)) {
 aotContext->setInstructionPointer(2);

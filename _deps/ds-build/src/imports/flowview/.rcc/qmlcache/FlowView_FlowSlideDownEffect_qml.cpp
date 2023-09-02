@@ -481,8 +481,8 @@ extern const QQmlPrivate::TypedFunction aotBuiltFunctions[] = {
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for itemHeight at line 36, column 5
-double r2_2;
 QObject *r2_1;
+double r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadScopeObjectPropertyLookup(0, &r2_1)) {
 aotContext->setInstructionPointer(2);
@@ -506,9 +506,9 @@ return r2_2;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for value at line 57, column 17
-QObject *r2_1;
 QVariant r2_3;
 double r2_2;
+QObject *r2_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(13, &r2_1)) {
 aotContext->setInstructionPointer(2);
