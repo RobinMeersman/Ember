@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/QtQuick/Studio/EventSystem">/home/robin/Desktop/Projects/Ember/qml/QtQuick/Studio/EventSystem</file>
+
+  </qresource>
+</RCC>

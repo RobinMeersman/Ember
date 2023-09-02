@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/content">
+    <file alias="qmldir">/home/robin/Desktop/Projects/Ember/qml/content/qmldir</file>
+  </qresource>
+</RCC>
+

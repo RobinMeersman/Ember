@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/FlowView">/home/robin/Desktop/Projects/Ember/qml/FlowView</file>
+
+  </qresource>
+</RCC>

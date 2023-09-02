@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/QtQuick/Studio/Effects">
+    <file alias="qmldir">/home/robin/Desktop/Projects/Ember/qml/QtQuick/Studio/Effects/qmldir</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/Ember/">
+    <file alias="Constants.qml">/home/robin/Desktop/Projects/Ember/imports/Ember/Constants.qml</file>
+    <file alias="DirectoryFontLoader.qml">/home/robin/Desktop/Projects/Ember/imports/Ember/DirectoryFontLoader.qml</file>
+    <file alias="EventListModel.qml">/home/robin/Desktop/Projects/Ember/imports/Ember/EventListModel.qml</file>
+    <file alias="EventListSimulator.qml">/home/robin/Desktop/Projects/Ember/imports/Ember/EventListSimulator.qml</file>
+  </qresource>
+</RCC>
+

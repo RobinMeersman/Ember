@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Main">
+    <file alias="qmldir">/home/robin/Desktop/Projects/Ember/qml/Main/qmldir</file>
+  </qresource>
+</RCC>
+

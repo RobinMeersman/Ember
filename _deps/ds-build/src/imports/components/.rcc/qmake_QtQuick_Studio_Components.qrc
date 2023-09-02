@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/QtQuick/Studio/Components">
+    <file alias="qmldir">/home/robin/Desktop/Projects/Ember/qml/QtQuick/Studio/Components/qmldir</file>
+  </qresource>
+</RCC>
+
