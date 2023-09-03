@@ -56,3 +56,14 @@ compile_commands.json
 .idea/
 cmake-build-debug/
 *.json
+
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_deps/
