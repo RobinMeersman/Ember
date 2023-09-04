@@ -386,9 +386,9 @@ Q_UNUSED(argumentsPtr)
 // expression for fontDirectory at line 10, column 5
 QString r11_1;
 QObject *r7_1;
-QObject *r2_1;
-QString r2_2;
 QUrl r2_3;
+QString r2_2;
+QObject *r2_1;
 QUrl r10_1;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadSingletonLookup(0, &r2_1)) {
@@ -436,8 +436,8 @@ return r2_3;
 Q_UNUSED(aotContext)
 Q_UNUSED(argumentsPtr)
 // expression for folder at line 21, column 9
-QUrl r2_2;
 QObject *r2_1;
+QUrl r2_2;
 // generate_LoadQmlContextPropertyLookup
 while (!aotContext->loadContextIdLookup(6, &r2_1)) {
 aotContext->setInstructionPointer(2);

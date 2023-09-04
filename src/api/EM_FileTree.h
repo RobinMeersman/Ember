@@ -8,11 +8,14 @@
 #include <cstdint>
 #include <string>
 #include <vector>
+#include <filesystem>
+
+namespace fs = std::filesystem;
 
 /*
  * represents a node in the file tree
  * fields:
- * - size: on-disk size of the file/folder
+ * - size: on-disk size of the file/folder (in bytes, base 2)
  * - path: the path to the file/folder
  * - is_directory: true if the current node represents a directory
  * - child: child-node
@@ -20,26 +23,31 @@
 **/
 typedef struct Em_node {
     uint_fast64_t size;
-    std::string path;
+    fs::path full_path;
+    std::string name;
     bool is_directory;
+    struct Em_node* parent;
     std::vector<struct Em_node*> children;
 } EM_Node;
 
-// todo
 typedef struct EM_FileTree {
-
+    EM_Node* root;
 } EM_FileTree;
 
-EM_Node* init_tree(std::string& root_path);
+EM_FileTree* init_tree();
 
-EM_Node* init_node(uint_fast64_t size, const std::string& path, bool is_directory);
+void build_tree(EM_FileTree* tree, const fs::path& root_path);
 
-void free_tree(EM_Node* tree);
+EM_Node* init_node(uint_fast64_t size, EM_Node* paren, fs::path full_path, std::string name, bool is_directory);
+
+void free_tree(EM_FileTree* tree);
 
 void free_node(EM_Node* node);
 
-bool add_child(EM_Node* root);
+void add_child(EM_Node* root, EM_Node* child);
 
-bool remove_child(EM_Node* root, std::string& path);
+void remove_child(EM_Node* root);
+
+EM_Node* search_tree(EM_Node* root, const std::string& query);
 
 #endif //EMBERAPP_EM_FILETREE_H

@@ -10,19 +10,35 @@
 
 #include "api/EM_FileTree.h"
 #include <iostream>
-#include <vector>
 
-int main(int argc, char *argv[])
-{
+void basic_tests(EM_FileTree* tree) {
+    tree->root = init_node(0, nullptr, fs::path("test"), "test_name", true);
+    add_child(tree->root, init_node(0, nullptr, fs::path("test/test.txt"), "test.txt", false));
+    add_child(tree->root, init_node(0, nullptr, fs::path("test/test2.txt"), "test2.txt", false));
 
-    EM_Node node = {
-            .size = 0,
-            .path = "",
-            .is_directory = false
-    };
+    std::cout << "amount of children: " << tree->root->children.size() << std::endl;
+    std::cout << "full path: " << tree->root->full_path << std::endl;
+    std::cout << "name: " << tree->root->name << std::endl;
 
-    std::cout << node.children.size() << std::endl;
+    add_child(tree->root, init_node(0, nullptr, fs::path("test/directory"), "directory", true));
+    auto directory = search_tree(tree->root, "directory");
+    add_child(directory, init_node(0, nullptr, fs::path("test/directory/test.txt"), "test.txt", false));
 
+    std::cout << "search: " << search_tree(tree->root, "test2.txt")->name << std::endl;
+    std::cout << "search: " << search_tree(tree->root, "test/directory/test.txt")->name << std::endl;
+}
+
+int main() {
+    EM_FileTree* tree = init_tree();
+
+//    basic_tests(tree);
+    build_tree(tree, fs::path("/home/robin/Pictures"));
+
+    free_tree(tree);
+    return 0;
+}
+
+int main2(int argc, char *argv[]) {
     set_qt_environment();
 
     QGuiApplication app(argc, argv);

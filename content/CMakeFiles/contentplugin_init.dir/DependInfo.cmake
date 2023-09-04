@@ -12,8 +12,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/robin/Desktop/Projects/Ember/content/contentplugin_init_autogen/mocs_compilation.cpp" "content/CMakeFiles/contentplugin_init.dir/contentplugin_init_autogen/mocs_compilation.cpp.o" "gcc" "content/CMakeFiles/contentplugin_init.dir/contentplugin_init_autogen/mocs_compilation.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
