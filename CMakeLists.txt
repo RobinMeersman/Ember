@@ -18,7 +18,10 @@ endif()
 qt_add_executable(EmberApp src/main.cpp
         src/api/Ember_Linux.h
         src/api/EM_FileTree.h
-        src/api/EM_FileTree.cpp)
+        src/api/EM_FileTree.cpp
+        src/api/default_dirs.h
+        src/api/Ember_Linux.cpp
+        src/api/default_dirs.cpp)
 
 qt_add_resources(EmberApp "configuration"
     PREFIX "/"

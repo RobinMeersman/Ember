@@ -5,11 +5,11 @@
 #ifndef EMBERAPP_EMBER_LINUX_H
 #define EMBERAPP_EMBER_LINUX_H
 
-#include <map>
 #include <string>
+#include "default_dirs.h"
 
 // todo: figure out which functions are needed
-std::map<std::string, std::string> init_special_folders_linux();
+special_folder_map_t init_special_folders_linux();
 
 
 #endif //EMBERAPP_EMBER_LINUX_H

@@ -6437,7 +6437,19 @@
 		<Unit filename="/home/robin/Desktop/Projects/Ember/src/api/EM_FileTree.h">
 			<Option target="EmberApp"/>
 		</Unit>
+		<Unit filename="/home/robin/Desktop/Projects/Ember/src/api/Ember_Linux.cpp">
+			<Option target="EmberApp"/>
+		</Unit>
 		<Unit filename="/home/robin/Desktop/Projects/Ember/src/api/Ember_Linux.h">
+			<Option target="EmberApp"/>
+		</Unit>
+		<Unit filename="/home/robin/Desktop/Projects/Ember/src/api/default_dirs.cpp">
+			<Option target="EmberApp"/>
+		</Unit>
+		<Unit filename="/home/robin/Desktop/Projects/Ember/src/api/default_dirs.h">
+			<Option target="EmberApp"/>
+		</Unit>
+		<Unit filename="/home/robin/Desktop/Projects/Ember/src/api/string_expansion.h">
 			<Option target="EmberApp"/>
 		</Unit>
 		<Unit filename="/home/robin/Desktop/Projects/Ember/src/main.cpp">

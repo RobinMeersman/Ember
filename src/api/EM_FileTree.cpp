@@ -5,6 +5,16 @@
 #include "EM_FileTree.h"
 #include <iostream>
 #include <utility>
+#include <string>
+
+bool filter(std::string&& filename, std::string&& filter) {
+    if(filename.empty() || filter.empty() || filename.size() < filter.size()) return false;
+
+    for(size_t i = 0; i < filter.size(); ++i) {
+        if(filename.at(i) != filter.at(i)) return false;
+    }
+    return true;
+}
 
 EM_Node* init_node(uint_fast64_t size, EM_Node* parent, fs::path full_path, std::string name, bool is_directory) {
     return new EM_Node {
@@ -64,11 +74,12 @@ void build_tree(EM_FileTree* tree, const fs::path& root_path) {
     tree->root = init_node(0, nullptr, root_path, root_path.filename().string(), true);
     uint_fast64_t size = 0;
     for(const auto& entry : fs::directory_iterator(root_path)) {
-        if(fs::is_directory(entry.path())) {
+        if(fs::is_directory(entry.path()) && !filter(entry.path().filename().string(), ".")) {
             auto subdir = traverse_directory(entry.path(), tree->root);
             tree->root->children.push_back(subdir);
             size += subdir->size;
         } else {
+            if(filter(entry.path().filename().string(), ".")) continue;
             auto file = init_node(
                     entry.file_size(),
                     tree->root,
@@ -86,7 +97,7 @@ void build_tree(EM_FileTree* tree, const fs::path& root_path) {
 void free_tree(EM_FileTree* tree) {
     if(tree == nullptr) return;
 
-    free_node(tree->root);
+    if(tree->root != nullptr) free_node(tree->root);
     delete tree;
 }
 
@@ -111,4 +122,9 @@ EM_Node* search_tree(EM_Node* root, const std::string& query) {
         if(found_node != nullptr) return found_node;
     }
     return found_node;
+}
+
+std::ostream& operator<<(std::ostream& os, EM_Node* node) {
+    std::string s = "Node: {size = " + std::to_string(node->size) + " bytes, path = " + node->full_path.string() + ", name = " + node->name + "}";
+    return os << s;
 }

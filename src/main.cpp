@@ -10,6 +10,8 @@
 
 #include "api/EM_FileTree.h"
 #include <iostream>
+#include "api/Ember_Linux.h"
+#include "api/default_dirs.h"
 
 void basic_tests(EM_FileTree* tree) {
     tree->root = init_node(0, nullptr, fs::path("test"), "test_name", true);
@@ -30,9 +32,11 @@ void basic_tests(EM_FileTree* tree) {
 
 int main() {
     EM_FileTree* tree = init_tree();
+    special_folder_map_t map = init_special_folders_linux();
 
 //    basic_tests(tree);
-    build_tree(tree, fs::path("/home/robin/Pictures"));
+    build_tree(tree, map.at(DESKTOP));
+    std::cout << tree->root << std::endl;
 
     free_tree(tree);
     return 0;

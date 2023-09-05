@@ -17,6 +17,7 @@ namespace fs = std::filesystem;
  * fields:
  * - size: on-disk size of the file/folder (in bytes, base 2)
  * - path: the path to the file/folder
+ * - name: file/folder -name
  * - is_directory: true if the current node represents a directory
  * - child: child-node
  * todo: rethink about child: what if dir has more than 1 file?
@@ -33,6 +34,8 @@ typedef struct Em_node {
 typedef struct EM_FileTree {
     EM_Node* root;
 } EM_FileTree;
+
+std::ostream& operator<<(std::ostream& os, EM_Node* node);
 
 EM_FileTree* init_tree();
 
