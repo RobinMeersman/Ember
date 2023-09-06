@@ -13,37 +13,22 @@
 #include "api/Ember_Linux.h"
 #include "api/default_dirs.h"
 
-void basic_tests(EM_FileTree* tree) {
-    tree->root = init_node(0, nullptr, fs::path("test"), "test_name", true);
-    add_child(tree->root, init_node(0, nullptr, fs::path("test/test.txt"), "test.txt", false));
-    add_child(tree->root, init_node(0, nullptr, fs::path("test/test2.txt"), "test2.txt", false));
-
-    std::cout << "amount of children: " << tree->root->children.size() << std::endl;
-    std::cout << "full path: " << tree->root->full_path << std::endl;
-    std::cout << "name: " << tree->root->name << std::endl;
-
-    add_child(tree->root, init_node(0, nullptr, fs::path("test/directory"), "directory", true));
-    auto directory = search_tree(tree->root, "directory");
-    add_child(directory, init_node(0, nullptr, fs::path("test/directory/test.txt"), "test.txt", false));
-
-    std::cout << "search: " << search_tree(tree->root, "test2.txt")->name << std::endl;
-    std::cout << "search: " << search_tree(tree->root, "test/directory/test.txt")->name << std::endl;
-}
-
-int main() {
-    EM_FileTree* tree = init_tree();
-    special_folder_map_t map = init_special_folders_linux();
-
-//    basic_tests(tree);
-    build_tree(tree, map.at(DESKTOP));
-    std::cout << tree->root << std::endl;
-
-    free_tree(tree);
-    return 0;
-}
-
-int main2(int argc, char *argv[]) {
+int main(int argc, char *argv[]) {
     set_qt_environment();
+    auto tree = init_tree();
+    special_folder_map_t map;
+
+#if defined(__gnu_linux__)
+    map = init_special_folders_linux();
+    std::cout << "LINUX!" << std::endl;
+#elif defined(__WIN32__) || defined(_WIN64)
+    map = init_special_folders_windows();
+#elif defined(__APPLE__)
+    map = init_special_folders_mac();
+#else
+    std::cerr << "UNKNOWN OS" << std::endl;
+    return -1;
+#endif
 
     QGuiApplication app(argc, argv);
 

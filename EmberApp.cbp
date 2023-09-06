@@ -6449,9 +6449,6 @@
 		<Unit filename="/home/robin/Desktop/Projects/Ember/src/api/default_dirs.h">
 			<Option target="EmberApp"/>
 		</Unit>
-		<Unit filename="/home/robin/Desktop/Projects/Ember/src/api/string_expansion.h">
-			<Option target="EmberApp"/>
-		</Unit>
 		<Unit filename="/home/robin/Desktop/Projects/Ember/src/main.cpp">
 			<Option target="EmberApp"/>
 		</Unit>
