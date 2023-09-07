@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../qml/Ember/libEmberplugin.a CMakeFiles/Emberplugin.dir/Emberplugin_autogen/mocs_compilation.cpp.o CMakeFiles/Emberplugin.dir/Emberplugin_EmberPlugin.cpp.o
-/usr/bin/ranlib ../../qml/Ember/libEmberplugin.a
