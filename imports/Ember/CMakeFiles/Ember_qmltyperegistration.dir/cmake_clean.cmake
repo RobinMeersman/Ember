@@ -2,8 +2,8 @@ file(REMOVE_RECURSE
   "../../qml/Ember/Ember.qmltypes"
   "CMakeFiles/Ember_qmltyperegistration"
   "ember_qmltyperegistrations.cpp"
-  "meta_types/qt6ember_debug_metatypes.json"
-  "meta_types/qt6ember_debug_metatypes.json.gen"
+  "meta_types/qt6ember_relwithdebinfo_metatypes.json"
+  "meta_types/qt6ember_relwithdebinfo_metatypes.json.gen"
 )
 
 # Per-language clean rules from dependency scanning.

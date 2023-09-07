@@ -22,8 +22,8 @@ file(REMOVE_RECURSE
   "ember_qmltyperegistrations.cpp"
   "libEmber.a"
   "libEmber.pdb"
-  "meta_types/qt6ember_debug_metatypes.json"
-  "meta_types/qt6ember_debug_metatypes.json.gen"
+  "meta_types/qt6ember_relwithdebinfo_metatypes.json"
+  "meta_types/qt6ember_relwithdebinfo_metatypes.json.gen"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,5 +1,5 @@
-/home/robin/Desktop/Projects/Ember/content/contentplugin_autogen/include/contentplugin_contentPlugin.moc: /home/robin/Desktop/Projects/Ember/content/contentplugin_contentPlugin.cpp \
-  /home/robin/Desktop/Projects/Ember/content/contentplugin_autogen/moc_predefs.h \
+/home/robin/Desktop/Ember/content/contentplugin_autogen/include/contentplugin_contentPlugin.moc: /home/robin/Desktop/Ember/content/contentplugin_contentPlugin.cpp \
+  /home/robin/Desktop/Ember/content/contentplugin_autogen/moc_predefs.h \
   /home/robin/Qt/6.5.2/gcc_64/include/QtCore/QUrl \
   /home/robin/Qt/6.5.2/gcc_64/include/QtCore/q20algorithm.h \
   /home/robin/Qt/6.5.2/gcc_64/include/QtCore/q20functional.h \

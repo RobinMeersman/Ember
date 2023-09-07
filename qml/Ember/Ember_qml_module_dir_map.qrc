@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/">
-    <file alias="/Ember">/home/robin/Desktop/Projects/Ember/qml/Ember</file>
+    <file alias="/Ember">/home/robin/Desktop/Ember/qml/Ember</file>
 
   </qresource>
 </RCC>

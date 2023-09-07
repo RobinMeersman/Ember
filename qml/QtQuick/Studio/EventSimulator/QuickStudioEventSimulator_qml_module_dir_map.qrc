@@ -1,6 +1,6 @@
 <RCC>
   <qresource prefix="/">
-    <file alias="/QtQuick/Studio/EventSimulator">/home/robin/Desktop/Projects/Ember/qml/QtQuick/Studio/EventSimulator</file>
+    <file alias="/QtQuick/Studio/EventSimulator">/home/robin/Desktop/Ember/qml/QtQuick/Studio/EventSimulator</file>
 
   </qresource>
 </RCC>
