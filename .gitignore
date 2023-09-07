@@ -68,3 +68,9 @@ install_manifest.txt
 CTestTestfile.cmake
 _deps/
 EmberApp
+.qt/
+.rcc/
+.qt_plugins/
+.generated/
+EmberApp_autogen/
+.cmake/
