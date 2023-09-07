@@ -74,5 +74,3 @@ EmberApp
 .generated/
 EmberApp_autogen/
 .cmake/
-content/
-imports/
