@@ -64,6 +64,51 @@ Rectangle {
                 anchors.topMargin: 0
                 layer.mipmap: false
                 layer.textureMirroring: ShaderEffectSource.NoMirroring
+
+                Button {
+                    id: desktop_btn
+                    x: 8
+                    y: 71
+                    width: 171
+                    height: 52
+                    text: qsTr("Desktop")
+                }
+
+                Button {
+                    id: pictures_btn
+                    x: 8
+                    y: 129
+                    width: 171
+                    height: 52
+                    text: qsTr("Pictures")
+                }
+
+                Button {
+                    id: music_btn
+                    x: 8
+                    y: 245
+                    width: 171
+                    height: 52
+                    text: qsTr("Music")
+                }
+
+                Button {
+                    id: downloads_btn
+                    x: 8
+                    y: 187
+                    width: 171
+                    height: 52
+                    text: qsTr("Downloads")
+                }
+
+                Button {
+                    id: videos_btn
+                    x: 8
+                    y: 303
+                    width: 171
+                    height: 52
+                    text: qsTr("Videos")
+                }
             }
 
             Rectangle {
