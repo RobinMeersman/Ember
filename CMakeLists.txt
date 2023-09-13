@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.26)
-project(untitled)
+cmake_minimum_required(VERSION 3.20)
+project(Ember)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_AUTOMOC ON)
@@ -15,8 +15,8 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(untitled main.cpp)
-target_link_libraries(untitled
+add_executable(Ember main.cpp)
+target_link_libraries(Ember
         Qt::Core
         Qt::Gui
         Qt::Widgets
