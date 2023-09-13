@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/QtQuick/Studio/Application">/home/robin/Desktop/Ember/qml/QtQuick/Studio/Application</file>
-
-  </qresource>
-</RCC>

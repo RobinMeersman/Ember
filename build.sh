@@ -1,4 +1,4 @@
 #!/bin/bash
 
 set -xe
-make -j4
+make -j14
