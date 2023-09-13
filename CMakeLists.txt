@@ -15,7 +15,18 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(Ember main.cpp)
+add_executable(Ember main.cpp
+        gui/views/MainView.cpp
+        gui/views/MainView.h
+        gui/components/SpecialFolderButton.cpp
+        gui/components/SpecialFolderButton.h
+        gui/handlers/ClickHandler.cpp
+        gui/handlers/ClickHandler.h
+        backend/api/default_dirs.cpp
+        backend/api/EM_FileTree.cpp
+        backend/api/Ember_Linux.cpp
+        gui/styles.h)
+
 target_link_libraries(Ember
         Qt::Core
         Qt::Gui

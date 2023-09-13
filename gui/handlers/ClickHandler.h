@@ -8,20 +8,21 @@
 #include <filesystem>
 #include <QObject>
 #include <QDebug>
-#include "src/api/EM_FileTree.h"
-#include "src/api/Ember_Linux.h"
-#include "src/api/default_dirs.h"
+#include "../../backend/api/Ember_Linux.h"
+#include "../../backend/api/default_dirs.h"
+#include "../../backend/api/EM_FileTree.h"
 
 namespace fs = std::filesystem;
 
-class ClickHandler : public QObject {
-    Q_OBJECT
+class ClickHandler {
+
 public:
     EM_FileTree* tree;
     special_folder_map_t map;
+
     ClickHandler();
     ~ClickHandler();
-public slots:
-    Q_INVOKABLE void shortcut_btn_click(fs::path& path);
+
+    void shortcut_btn_click(fs::path& path);
 };
 #endif //EMBERAPP_CLICKHANDLER_H
