@@ -6,8 +6,17 @@
 #define EMBER_SEARCHBAR_H
 
 
-class SearchBar {
+#include <QWidget>
+#include <filesystem>
 
+namespace fs = std::filesystem;
+
+class SearchBar : public QWidget {
+
+public:
+    fs::path& current_path;
+    SearchBar(fs::path& display_path, QWidget* parent = nullptr);
+    SearchBar(fs::path&& display_path, QWidget* parent = nullptr);
 };
 
 

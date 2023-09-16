@@ -8,5 +8,6 @@
 #include <QString>
 
 const auto DEBUG_BACKGROUND = QString("background-color: red;");
+const auto DEBUG_BACKGROUND2 = QString("background-color: green;");
 
 #endif //EMBER_STYLES_H

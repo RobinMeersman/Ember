@@ -6,29 +6,35 @@
 #include <QStyle>
 #include <QStyleOption>
 #include <QPainter>
-#include <QFile>
 #include <QResizeEvent>
+#include <QMenuBar>
+#include <iostream>
 #include "MainView.h"
+#include "SearchBar.h"
 #include "../styles.h"
 
 // needed: QTreeView
 
-MainView::MainView(QWidget *parent) : QWidget(parent) {
-    if(parent != nullptr) setMinimumSize(parent->size());
+MainView::MainView(QWidget *parent) : QMainWindow(parent) {
+    if (parent != nullptr) setMinimumSize(parent->size());
     else setMinimumSize(QSize(800, 600));
 
     // styling
-    setStyleSheet(DEBUG_BACKGROUND); // tmp: will be changed when GUI is finalized
+    setStyleSheet(DEBUG_BACKGROUND);
 
-    QVBoxLayout layout(this);
+    auto layout = new QVBoxLayout(this);
+    setLayout(layout);
 
     // top-bar with searchbar
+    auto top_bar = new SearchBar(fs::path(""));
+    layout->addWidget(top_bar);
 
     // left column with shortcut buttons
 
     // right column with treeview
 
     // statusbar
+
 }
 
 // necessary to be able to use css

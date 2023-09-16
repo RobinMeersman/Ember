@@ -25,7 +25,9 @@ add_executable(Ember main.cpp
         backend/api/default_dirs.cpp
         backend/api/EM_FileTree.cpp
         backend/api/Ember_Linux.cpp
-        gui/styles.h)
+        gui/styles.h
+        gui/views/SearchBar.cpp
+        gui/views/SearchBar.h)
 
 target_link_libraries(Ember
         Qt::Core

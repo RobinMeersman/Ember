@@ -10,13 +10,16 @@
 #include <QHBoxLayout>
 #include <QLabel>
 #include <Qt>
+#include <QMainWindow>
 
 #include "../handlers/ClickHandler.h"
 
-class MainView : public QWidget {
+class MainView : public QMainWindow {
     Q_OBJECT
 
 public:
+    std::shared_ptr<ClickHandler> handler;
+
     explicit MainView(QWidget* parent = nullptr);
     void paintEvent(QPaintEvent* event);
 };
