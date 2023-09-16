@@ -12,6 +12,8 @@
 #include "MainView.h"
 #include "SearchBar.h"
 #include "../styles.h"
+#include "StatusBar.h"
+#include "CentralWidget.h"
 
 // needed: QTreeView
 
@@ -19,22 +21,19 @@ MainView::MainView(QWidget *parent) : QMainWindow(parent) {
     if (parent != nullptr) setMinimumSize(parent->size());
     else setMinimumSize(QSize(800, 600));
 
-    // styling
-    setStyleSheet(DEBUG_BACKGROUND);
-
-    auto layout = new QVBoxLayout(this);
-    setLayout(layout);
+    setObjectName("Main window");
 
     // top-bar with searchbar
-    auto top_bar = new SearchBar(fs::path(""));
-    layout->addWidget(top_bar);
+    auto top_bar = new SearchBar(fs::path(""), this);
+    setMenuWidget(top_bar);
 
-    // left column with shortcut buttons
-
-    // right column with treeview
+    // left column with shortcut buttons, right column with treeview
+    auto centralWidget = new CentralWidget(nullptr, nullptr, this);
+    setCentralWidget(centralWidget);
 
     // statusbar
-
+    auto status_bar = new StatusBar(nullptr, this);
+    setStatusBar(status_bar);
 }
 
 // necessary to be able to use css

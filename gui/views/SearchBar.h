@@ -5,13 +5,12 @@
 #ifndef EMBER_SEARCHBAR_H
 #define EMBER_SEARCHBAR_H
 
-
-#include <QWidget>
 #include <filesystem>
+#include <QMenuBar>
 
 namespace fs = std::filesystem;
 
-class SearchBar : public QWidget {
+class SearchBar : public QMenuBar {
 
 public:
     fs::path& current_path;
