@@ -12,5 +12,5 @@ CentralWidget::CentralWidget(QWidget *left, QWidget *right, QWidget *parent) \
     auto* layout = new QHBoxLayout(this);
     setLayout(layout);
 
-    setStyleSheet(DEBUG_BACKGROUND3);
+//    setStyleSheet(DEBUG_BACKGROUND3);
 }

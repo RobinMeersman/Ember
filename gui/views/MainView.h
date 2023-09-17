@@ -21,7 +21,6 @@ public:
     std::shared_ptr<ClickHandler> handler;
 
     explicit MainView(QWidget* parent = nullptr);
-    void paintEvent(QPaintEvent* event);
 };
 
 

@@ -19,28 +19,25 @@
 
 MainView::MainView(QWidget *parent) : QMainWindow(parent) {
     if (parent != nullptr) setMinimumSize(parent->size());
-    else setMinimumSize(QSize(800, 600));
+    else setMinimumSize(QSize(1000, 600));
 
-    setObjectName("Main window");
+    setObjectName("main_window");
 
     // top-bar with searchbar
     auto top_bar = new SearchBar(fs::path(""), this);
+    top_bar->setObjectName("search_bar");
     setMenuWidget(top_bar);
 
     // left column with shortcut buttons, right column with treeview
-    auto centralWidget = new CentralWidget(nullptr, nullptr, this);
-    setCentralWidget(centralWidget);
+    auto central_widget = new CentralWidget(nullptr, nullptr, this);
+    central_widget->setObjectName("central_widget");
+    setCentralWidget(central_widget);
 
     // statusbar
-    auto status_bar = new StatusBar(nullptr, this);
+    // testing:
+    EM_Node node = {
+            .size = 3000000
+    };
+    auto status_bar = new StatusBar(&node, this);
     setStatusBar(status_bar);
-}
-
-// necessary to be able to use css
-void MainView::paintEvent(QPaintEvent *event) {
-    QStyleOption opt;
-    opt.initFrom(this);
-    QPainter painter(this);
-    style()->drawPrimitive(QStyle::PE_Widget, &opt, &painter, this);
-    QWidget::paintEvent(event);
 }
