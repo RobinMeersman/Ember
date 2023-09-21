@@ -10,6 +10,7 @@
 #include "../../backend/api/EM_FileTree.h"
 
 class StatusBar : public QStatusBar {
+    Q_OBJECT
 public:
     EM_Node* node;
     explicit StatusBar(EM_Node* current_node, QWidget* parent = nullptr);

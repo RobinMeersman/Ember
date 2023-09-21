@@ -11,7 +11,7 @@
 namespace fs = std::filesystem;
 
 class SearchBar : public QMenuBar {
-
+    Q_OBJECT
 public:
     fs::path& current_path;
     SearchBar(fs::path& display_path, QWidget* parent = nullptr);
