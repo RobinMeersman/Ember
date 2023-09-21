@@ -16,5 +16,6 @@ const auto DEBUG_BACKGROUND3    = QString("background-color: blue;");
 const auto PADDING_10_LEFT      = QString("padding-left: 10px;");
 const auto MARGIN_10_LEFT       = QString("margin-left: 10px;");
 const auto BORDER_TOP           = QString("border-top: 1px solid #f55a1d;");
+const auto BORDER_BOTTOM        = QString("border-bottom: 1px solid #f55a1d;");
 
 #endif //EMBER_STYLES_H

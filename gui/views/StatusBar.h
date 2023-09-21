@@ -12,10 +12,11 @@
 class StatusBar : public QStatusBar {
     Q_OBJECT
 public:
-    EM_Node* node;
-    explicit StatusBar(EM_Node* current_node, QWidget* parent = nullptr);
+    uint_fast64_t file_size;
+    bool size_set = false;
+    StatusBar(uint_fast64_t& file_size, QWidget* parent = nullptr);
     std::string pretty_print_filesize() const;
-    void set_node(EM_Node* new_node);
+    void set_size(uint_fast64_t& new_size);
 };
 
 

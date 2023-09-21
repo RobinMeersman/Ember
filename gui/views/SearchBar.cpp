@@ -7,10 +7,13 @@
 #include "../styles.h"
 
 SearchBar::SearchBar(fs::path &&display_path, QWidget *parent) : QMenuBar(parent), current_path(display_path) {
+    setObjectName("search_bar");
     auto layout = new QHBoxLayout(this);
     setLayout(layout);
     setMinimumHeight(40);
-    setStyleSheet(DEBUG_BACKGROUND2);
+    setStyleSheet("#search_bar {" + BORDER_BOTTOM + "}");
+
+    layout->setAlignment(Qt::AlignVCenter);
 }
 
 SearchBar::SearchBar(fs::path &display_path, QWidget *parent) : QMenuBar(parent), current_path(display_path) {
