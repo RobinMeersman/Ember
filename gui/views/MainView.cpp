@@ -24,7 +24,7 @@ MainView::MainView(QWidget *parent) : QMainWindow(parent) {
     setObjectName("main_window");
 
     // top-bar with searchbar
-    auto top_bar = new SearchBar(fs::path(""), this);
+    auto top_bar = new SearchBar(this);
     top_bar->setObjectName("search_bar");
     setMenuWidget(top_bar);
 
@@ -36,8 +36,9 @@ MainView::MainView(QWidget *parent) : QMainWindow(parent) {
     // statusbar
     // testing:
     EM_Node node = {
-            .size = 3000000
+            .size = 3000
     };
-    auto status_bar = new StatusBar(&node, this);
+    auto status_bar = new StatusBar(this);
+//    status_bar->set_size(node.size);
     setStatusBar(status_bar);
 }

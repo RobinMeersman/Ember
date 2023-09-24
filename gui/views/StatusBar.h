@@ -10,12 +10,14 @@
 #include "../../backend/api/EM_FileTree.h"
 
 class StatusBar : public QStatusBar {
-    Q_OBJECT
+private:
+    QLabel* label;
+    void set_label_text() const;
+    uint_fast64_t file_size = 0;
+
 public:
-    uint_fast64_t file_size;
     bool size_set = false;
-    StatusBar(uint_fast64_t& file_size, QWidget* parent = nullptr);
-    std::string pretty_print_filesize() const;
+    StatusBar(QWidget* parent = nullptr);
     void set_size(uint_fast64_t& new_size);
 };
 

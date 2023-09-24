@@ -6,16 +6,32 @@
 #include "SearchBar.h"
 #include "../styles.h"
 
-SearchBar::SearchBar(fs::path &&display_path, QWidget *parent) : QMenuBar(parent), current_path(display_path) {
+SearchBar::SearchBar(QWidget *parent) : QMenuBar(parent) {
     setObjectName("search_bar");
-    auto layout = new QHBoxLayout(this);
+
+    layout = new QHBoxLayout(this);
+    label = new QLabel();
+    search_box = new QLineEdit();
+    search_box->setObjectName("search_box");
+
+    label->setMinimumWidth(400);
+    search_box->setMinimumWidth(400);
+
+    label->setObjectName("path_label");
+    label->setStyleSheet("#path_label {" + ITALIC + MARGIN_10_LEFT + "}");
+    search_box->setStyleSheet("#search_box {" + MARGIN_10_RIGHT + "}"); // todo: styling
+
+    layout->addWidget(label);
+    layout->addSpacing(150);
+    layout->addWidget(search_box);
     setLayout(layout);
-    setMinimumHeight(40);
+    setMinimumHeight(50);
     setStyleSheet("#search_bar {" + BORDER_BOTTOM + "}");
 
     layout->setAlignment(Qt::AlignVCenter);
 }
 
-SearchBar::SearchBar(fs::path &display_path, QWidget *parent) : QMenuBar(parent), current_path(display_path) {
-    // todo: needed?
+void SearchBar::set_path(fs::path &new_path) {
+    current_path = new_path;
+    label->setText(QString::fromStdString(current_path.string()));
 }

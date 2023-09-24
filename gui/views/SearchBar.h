@@ -7,15 +7,22 @@
 
 #include <filesystem>
 #include <QMenuBar>
+#include <QLabel>
+#include <QLineEdit>
 
 namespace fs = std::filesystem;
 
 class SearchBar : public QMenuBar {
-    Q_OBJECT
+private:
+    QHBoxLayout* layout;
+    QLabel* label;
+    QLineEdit* search_box;
+
+    fs::path current_path;
+
 public:
-    fs::path& current_path;
-    SearchBar(fs::path& display_path, QWidget* parent = nullptr);
-    SearchBar(fs::path&& display_path, QWidget* parent = nullptr);
+    explicit SearchBar(QWidget* parent = nullptr);
+    void set_path(fs::path& new_path);
 };
 
 

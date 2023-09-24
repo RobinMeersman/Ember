@@ -12,7 +12,7 @@ class CentralWidget : public QWidget {
     Q_OBJECT
 public:
     QWidget* left_column;
-    QWidget* right_column;
+    QWidget* right_column; // tree-view
     QWidget* parent;
 
     CentralWidget(QWidget* left, QWidget* right, QWidget* parent = nullptr);
