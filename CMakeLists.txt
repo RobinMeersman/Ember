@@ -38,8 +38,7 @@ add_executable(Ember main.cpp
         gui/views/SearchBar.h
         gui/views/StatusBar.cpp
         gui/views/StatusBar.h
-        gui/views/CentralWidget.cpp
-        gui/views/CentralWidget.h)
+)
 
 target_link_libraries(Ember
         Qt::Core

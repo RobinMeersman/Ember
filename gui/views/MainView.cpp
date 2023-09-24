@@ -6,14 +6,12 @@
 #include <QStyle>
 #include <QStyleOption>
 #include <QPainter>
-#include <QResizeEvent>
-#include <QMenuBar>
-#include <iostream>
+#include <QResizeEvent>s
+#include <QDockWidget>
 #include "MainView.h"
 #include "SearchBar.h"
 #include "../styles.h"
 #include "StatusBar.h"
-#include "CentralWidget.h"
 
 // needed: QTreeView
 
@@ -28,17 +26,20 @@ MainView::MainView(QWidget *parent) : QMainWindow(parent) {
     top_bar->setObjectName("search_bar");
     setMenuWidget(top_bar);
 
-    // left column with shortcut buttons, right column with treeview
-    auto central_widget = new CentralWidget(nullptr, nullptr, this);
-    central_widget->setObjectName("central_widget");
-    setCentralWidget(central_widget);
+    // dock == left column
+    auto* left_dock = new QDockWidget("Shortcuts", this);
+    left_dock->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
+    left_dock->setFeatures(QDockWidget::NoDockWidgetFeatures);
+    left_dock->setObjectName("left_column");
+    left_dock->setFixedWidth(300); // todo: remove this
+
+    // add column to dock
+
+    addDockWidget(Qt::LeftDockWidgetArea, left_dock);
+
+    // central widget == treeview
 
     // statusbar
-    // testing:
-    EM_Node node = {
-            .size = 3000
-    };
     auto status_bar = new StatusBar(this);
-//    status_bar->set_size(node.size);
     setStatusBar(status_bar);
 }

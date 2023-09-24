@@ -17,6 +17,7 @@ const auto MARGIN_10_LEFT       = QString("margin-left: 10px;");
 const auto MARGIN_10_RIGHT      = QString("margin-right: 10px;");
 const auto BORDER_TOP           = QString("border-top: 1px solid #f55a1d;");
 const auto BORDER_BOTTOM        = QString("border-bottom: 1px solid #f55a1d;");
+const auto BORDER_RIGHT         = QString("border-right: 1px solid #f55a1d;");
 const auto ITALIC               = QString("font-style: italic;");
 
 #endif //EMBER_STYLES_H

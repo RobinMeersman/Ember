@@ -13,6 +13,7 @@ SearchBar::SearchBar(QWidget *parent) : QMenuBar(parent) {
     label = new QLabel();
     search_box = new QLineEdit();
     search_box->setObjectName("search_box");
+    search_box->setPlaceholderText("Search...");
 
     label->setMinimumWidth(400);
     search_box->setMinimumWidth(400);
